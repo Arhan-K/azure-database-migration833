@@ -15,7 +15,9 @@ To begin, a Windows Virtual Machine was set up and configured using the Microsof
 A connection was then established to the Windows Virtual Machine using the Microsoft Remote Desktop Protocol (RDP). This involved downloading a .rdp file from the Windows Azure Portal, and logging in with the password set while creating and deploying the VM.
 
 ### SQL Server and SSMS
-After the connection with the VM was established, Microsoft SQL Server was downloaded and installed within the VM. This was then used to install SQL Server Management Studio using the Basic Installation process, as well as and Azure Data Studio to restore and migrate the database in the subsequent tasks. 
+After the connection with the VM was established, the SQL Server Developer installer was downloaded from the Microsoft Download Center, and then run to launch the SQL Server Installation Wizard. The Basic installation option was chosen to install Microsoft SQL Server. 
+
+Once installed, SQL Server was then run to install SQL Server Management Studio, by clicking the Install SSMS button on the SQL Server Installation Wizard. The latest version (19.3) was then downloaded and installed from the Microsoft Download Center.
 
 ### Creating the Production Database
 The production database AdventureWorks2022 was downloaded onto the VM using the backup file provided, which corresponded to the Microsoft SQL Server Database AdventureWorks. 
@@ -24,6 +26,7 @@ The production database AdventureWorks2022 was downloaded onto the VM using the 
 This milestone involved moving the database from the local VM storage to a cloud-based Azure SQL database using Azure Data Studio.
 
 ### Setting up Azure Data Studio
+Azure Data Studio was installed along with SSMS. 
 
 ### Schema Migration:
 After connections to both, the on-premise database, as well as the Azure SQL database were established, the SQL Schema Compare extension was installed on Azure Data Studio, and used to compare the schemas of both the databases, and then migrate the schemas from the source, i.e. the on-premise database, to the target, i.e. the Azure SQL database. 

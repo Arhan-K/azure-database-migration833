@@ -7,7 +7,12 @@ Furthermore, in order to ensure the availability and accessibility of data under
 
 Finally, in order to enhance security, Microsoft Entra ID integration was employed, thereby adding an added layer of control and access.
 
-## Setting Up the Production Environment
+This project was very useful in enabling me to gain a hands-on experience in Cloud Engineering and Database Management through the use of Microsoft Azure. I was able to get a clear idea about the procedures involved in the use of Cloud resources, as well as the purposes behind it.
+
+A flowchart diagram detailing the cloud storage structure, as well as screenshots documenting different stages of the project are shown in the wiki file of the repository.
+
+## Setting Up the Production Environment:
+This milestone involved setting up the environment for the cloud-based database, by provisioning a Windows Virtual Machine and installing SQL Server, SQL Server Management Studio, and Azure Data Studio, preparing for the data migration process in the subsequent milestone.
 
 ### Virtual Machine
 To begin, a Windows Virtual Machine was set up and configured using the Microsoft Azure portal. The VM acted as the home for the production environment, playing the role of an on-premise system used by a company. A VM named ADM-Project was set up in a resource group of the same name. Windows 10 Pro was chosen as the image for the VM (corresponding to that of my local system) and the Central India was chosen as the region. The Standard B2ms (2 vcpus, 8 GiB memory) was selected as the size. The RDP (3389) Port was given access to the VM in order to connect to this using a Remote Desktop Protocol.
